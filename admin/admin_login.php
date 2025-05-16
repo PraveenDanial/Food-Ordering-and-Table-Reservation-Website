@@ -54,6 +54,7 @@ if(isset($message)){
       ';
    }
 }
+
 ?>
 
 <!-- admin login form section starts  -->
@@ -71,16 +72,5 @@ if(isset($message)){
 </section>
 
 <!-- admin login form section ends -->
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

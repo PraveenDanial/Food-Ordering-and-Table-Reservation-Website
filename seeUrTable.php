@@ -79,7 +79,7 @@ if (isset($_GET['cancel']) && is_numeric($_GET['cancel'])) {
       <p>email: <span><?= $fetch_table['email']; ?></span></p>
       <p>Time: <span><?= $fetch_table['time']; ?></span></p>
       <p>Date: <span><?= $fetch_table['date']; ?></span></p>
-      <p>Payment status: <span style="color:<?= $fetch_table['payment_status'] === 'pending' ? 'red' : 'green'; ?>"><?= $fetch_table['payment_status']; ?></span></p>
+
       <a href="#" class="btn cancel-btn" 
          data-id="<?= $fetch_table['id']; ?>" 
          data-created="<?= strtotime($fetch_table['created_at']); ?>">

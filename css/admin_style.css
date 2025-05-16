@@ -225,7 +225,7 @@ section {
 }
 
 .header .flex .navbar a:hover {
-  color: var(--main-color);
+  color: var(--red);
 }
 
 .header .flex .icons > * {
@@ -599,3 +599,18 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+.admin-login-link {
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.admin-login-link:hover {
+  background-color: #555;
+  color: #ffdd57;
+}
+

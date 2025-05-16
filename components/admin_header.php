@@ -1,4 +1,5 @@
 <?php
+
 if(isset($message)){
    foreach($message as $message){
       echo '
@@ -24,7 +25,8 @@ if(isset($message)){
          <a href="admin_accounts.php">Admin</a>
          <a href="users_accounts.php">Users</a>
          <a href="messages.php">Messages</a>
-         <a href="add_promotion.php">ADD Promation</a>
+         <a href="tabledate.php">Your reservation</a>
+    
       </nav>
 
       <div class="icons">

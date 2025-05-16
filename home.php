@@ -43,42 +43,50 @@ if (isset($_GET['payment']) && $_GET['payment'] == 'success') {
 
 
 
+
 <section class="hero">
 
    <div class="swiper hero-slider">
+
       <div class="swiper-wrapper">
 
-   
-
-    
-
-         <!-- Static Slide 3 -->
- 
-
-         <!-- ✅ Dynamic Slides from DB -->
-         <?php
-            $get_promos = $conn->prepare("SELECT * FROM promotions ORDER BY created_at DESC LIMIT 5");
-            $get_promos->execute();
-            if ($get_promos->rowCount() > 0) {
-               while ($promo = $get_promos->fetch(PDO::FETCH_ASSOC)) {
-         ?>
-         <div class="swiper-slide slide">
+         <!-- <div class="swiper-slide slide">
             <div class="content">
-               <span>promotion</span>
-               <h3><?= htmlspecialchars($promo['title']); ?></h3>
+               <span>order online</span>
+               <h3>delicious pizza</h3>
                <a href="menu.html" class="btn">see menus</a>
             </div>
             <div class="image">
-               <img src="uploaded_promotions/<?= htmlspecialchars($promo['image']); ?>" alt="">
+               <img src="images/home-img-1.png" alt="">
+            </div>
+         </div> -->
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>order online</span>
+               <h3>chezzy hamburger</h3>
+               <a href="menu.php" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
             </div>
          </div>
-         <?php
-               }
-            }
-         ?>
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>order online</span>
+               <h3>rosted chicken</h3>
+               <a href="menu.php" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+         </div>
 
       </div>
+
       <div class="swiper-pagination"></div>
+
    </div>
 
 </section>

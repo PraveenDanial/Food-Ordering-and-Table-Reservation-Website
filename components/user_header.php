@@ -1,4 +1,7 @@
 <?php
+
+@include '../components/connect.php';  // Adjust the path if needed
+
 if(isset($message)){
    foreach($message as $message){
       echo '
@@ -27,6 +30,7 @@ if(isset($message)){
          <a href="contact.php">CONTACT</a>
          <a href="table_reserve.php">TABLE BOOKING</a>
          <a href="seeUrTable.php">YOUR RESERVATION</a>
+         <a href="admin/admin_login.php" class="admin-login-link">Admin Login</a>
 
       </nav>
 

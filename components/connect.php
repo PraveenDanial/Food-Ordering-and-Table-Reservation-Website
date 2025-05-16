@@ -7,7 +7,7 @@ $user = 'root';
 $pass = '';
 
 try {
-    $conn = new PDO("mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4", $user, $pass);
+    $conn = new PDO("mysql:host=localhost;dbname=food_db", "root", "");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Show success in browser console

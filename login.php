@@ -60,9 +60,9 @@ if(isset($_POST['submit'])){
           
       <div class="imgtable">
             <div class="content">
-               <span>order online</span>
-               <h3>chezzy hamburger</h3>
-               <a href="menu.html" class="btn">see menus</a>
+               
+               <h3>Wellcome</h3>
+               
             </div>
             <div class="image">
                <img src="images/home-img-2.png" alt="">
